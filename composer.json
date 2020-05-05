@@ -6,9 +6,7 @@
   "homepage": "https://parall.ax",
   "license": "MIT",
   "require": {
-    "laravel/framework": "^5.5 | 6.* | 7.*",
-    "laravel/scout": "^5.0",
-    "algolia/algoliasearch-client-php": "^1.27"
+    "laravel/framework": "^5.5 | 6.* | 7.*"
   },
   "archive": {
     "exclude": [
