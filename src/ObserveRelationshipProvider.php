@@ -1,9 +1,9 @@
 <?php
-namespace Parallax\AlgoliaRelationship;
+namespace Parallax\ObserveRelationship;
 
 use Illuminate\Support\ServiceProvider;
 
-class AlgoliaRelationshipProvider extends ServiceProvider
+class ObserveRelationshipProvider extends ServiceProvider
 {
     /**
      * Bootstrap any application services.
@@ -16,7 +16,7 @@ class AlgoliaRelationshipProvider extends ServiceProvider
             __DIR__.'/../config/' => config_path(),
         ], 'static.config');
 
-        if ($models = config('algolia-relationship.models')) {
+        if ($models = config('observe-relationship.models')) {
             foreach ($models as $watch => $triggers) {
                 $watch::saved(function($model) use ($triggers) {
                     foreach ($triggers as $trigger) {

@@ -1,8 +1,8 @@
 {
-  "name": "parallax/algolia-relationships",
+  "name": "parallax/observe-relationships",
   "type": "library",
-  "description": "Algolia Relationships",
-  "keywords": ["laravel","scout","algolia","search","relationship","eloquent"],
+  "description": "observe Relationships",
+  "keywords": ["laravel","observe","scout","algolia","search","relationship","eloquent"],
   "homepage": "https://parall.ax",
   "license": "MIT",
   "require": {
@@ -23,13 +23,13 @@
   },
   "autoload": {
     "psr-4": {
-      "Parallax\\AlgoliaRelationship\\": "src/"
+      "Parallax\\ObserveRelationship\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Parallax\\AlgoliaRelationship\\AlgoliaRelationshipProvider"
+        "Parallax\\ObserveRelationship\\ObserveRelationshipProvider"
       ]
     }
   }
